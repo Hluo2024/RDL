@@ -1,0 +1,94 @@
+======================================================================
+Rider-Drone-Locker Pickup-and-Delivery Routing - Detailed Result
+======================================================================
+
+Instance: RDL-n25-02_cP1
+Method: ALNS
+Orders: 25 | Riders: 5 | Drones: 8 | Lockers: 5
+
+--- Solver Statistics ---
+  n_iterations: 10000
+  solve_time: 24.8000
+  best_objective: 468.1548
+  final_objective: 468.1548
+  rider_cost: 411.2569
+  drone_cost: 44.2214
+  delay_cost: 6.4387
+  walk_cost: 6.2379
+  total_delay: 6.4387
+  is_feasible: True
+  n_direct: 21
+  n_drone: 4
+  n_restarts: 17
+  best_iteration: 4638
+
+--- Objective ---
+  Total Cost:            468.1548
+  Rider Cost:            411.2569
+  Drone Cost:             44.2214
+  Delay Cost:              6.4387
+  Self-Pickup Cost:        6.2379
+  Total Delay (min):       6.4387
+
+  Feasible: True
+
+--- Order Service Modes ---
+  Direct: 21 | Drone: 4
+
+  Order Details:
+  Order  Mode     Ready    Deadline   Demand     Arrival(min) Delay(min)   Locker/Drone
+  -------------------------------------------------------------------------
+  0      Direct   26.3000  80.8000    2.8000     80.9014      0.1014       -
+  1      Drone    43.8000  94.5000    4.8000     94.1984      0.0000       L1/D3
+  2      Direct   31.8000  73.0000    4.5000     62.6256      0.0000       -
+  3      Drone    12.2000  76.4000    3.6000     48.4724      0.0000       L3/D2
+  4      Direct   15.5000  88.8000    7.4000     51.7101      0.0000       -
+  5      Direct   2.8000   50.7000    3.4000     51.3292      0.6292       -
+  6      Direct   31.5000  85.6000    5.5000     91.3081      5.7081       -
+  7      Direct   18.5000  87.1000    2.0000     67.6380      0.0000       -
+  8      Direct   13.5000  76.5000    1.4000     68.0594      0.0000       -
+  9      Direct   20.8000  92.2000    3.8000     58.9753      0.0000       -
+  10     Direct   22.8000  67.9000    2.6000     53.0582      0.0000       -
+  11     Direct   9.2000   72.4000    1.1000     72.2103      0.0000       -
+  12     Direct   0.1000   68.0000    8.4000     46.0006      0.0000       -
+  13     Drone    48.7000  92.7000    2.6000     92.1984      0.0000       L1/D1
+  14     Direct   40.7000  95.1000    4.5000     57.9048      0.0000       -
+  15     Drone    13.7000  76.3000    3.9000     46.4724      0.0000       L3/D0
+  16     Direct   33.3000  96.8000    9.3000     77.1570      0.0000       -
+  17     Direct   38.4000  96.4000    7.5000     63.1273      0.0000       -
+  18     Direct   39.7000  98.5000    2.4000     96.8721      0.0000       -
+  19     Direct   8.9000   69.5000    5.3000     63.5324      0.0000       -
+  20     Direct   7.2000   63.7000    8.5000     56.3909      0.0000       -
+  21     Direct   3.5000   60.9000    8.6000     55.1935      0.0000       -
+  22     Direct   23.4000  82.4000    3.0000     66.5644      0.0000       -
+  23     Direct   3.2000   62.4000    1.7000     59.2409      0.0000       -
+  24     Direct   46.6000  113.6000   10.4000    72.2116      0.0000       -
+
+--- Rider Routes ---
+  Rider 0: O(start) -> P10 -> P22 -> P14 -> P2 -> D10 -> D14 -> D2 -> D22 -> O1(end)
+    Distance: 12.5873 km | Nodes: 10
+    Service Start Times (min): O=0.0000, P10=22.8000, P22=27.1330, P14=40.7000, P2=45.4069, D10=53.0582, D14=57.9048, D2=62.6256, D22=66.5644, O1=77.0729
+
+  Rider 1: O(start) -> P8 -> P16 -> P0 -> P24 -> D8 -> D24 -> D16 -> D0 -> O1(end)
+    Distance: 21.7469 km | Nodes: 10
+    Service Start Times (min): O=0.0000, P8=13.5000, P16=33.3000, P0=43.0850, P24=46.6000, D8=68.0594, D24=72.2116, D16=77.1570, D0=80.9014, O1=98.5534
+
+  Rider 2: O(start) -> P20 -> P4 -> P12 -> D12 -> D4 -> D20 -> O1(end)
+    Distance: 21.9945 km | Nodes: 8
+    Service Start Times (min): O=0.0000, P20=7.2000, P4=15.5000, P12=25.3114, D12=46.0006, D4=51.7101, D20=56.3909, O1=74.7776
+
+  Rider 3: O(start) -> P23 -> P11 -> P7 -> P19 -> P6 -> P18 -> D23 -> D19 -> D7 -> D11 -> D6 -> D18 -> O1(end)
+    Distance: 27.9421 km | Nodes: 14
+    Service Start Times (min): O=0.0000, P23=3.2000, P11=9.2000, P7=20.3383, P19=24.6372, P6=33.8422, P18=39.7000, D23=59.2409, D19=63.5324, D7=67.6380, D11=72.2103, D6=91.3081, D18=96.8721, O1=110.0075
+
+  Rider 4: O(start) -> P5 -> P21 -> P15 -> P3 -> P9 -> H15 -> H3 -> P17 -> D5 -> D21 -> D9 -> D17 -> P1 -> P13 -> H13 -> H1 -> O1(end)
+    Distance: 18.5434 km | Nodes: 18
+    Service Start Times (min): O=0.0000, P5=2.8000, P21=11.4019, P15=15.9095, P3=20.3304, P9=23.3644, H15=35.6039, H3=37.6039, P17=40.3015, D5=51.3292, D21=55.1935, D9=58.9753, D17=63.1273, P1=71.8935, P13=75.8535, H13=85.8005, H1=87.8005, O1=89.8005
+
+--- Drone Tasks ---
+  Order 1: Drone 3 -> Locker 1 | Departure: 89.8005 min | Arrival: 94.1984 min | Flight: 7.3299 km (round trip) | Walk: (9.9100, 6.5400) -> (10.1900, 6.3400) = 0.3441 km x 2.0000 = 0.6882
+  Order 3: Drone 2 -> Locker 3 | Departure: 39.6039 min | Arrival: 48.4724 min | Flight: 14.7809 km (round trip) | Walk: (16.2700, 9.9400) -> (17.3900, 9.9200) = 1.1202 km x 2.0000 = 2.2404
+  Order 13: Drone 1 -> Locker 1 | Departure: 87.8005 min | Arrival: 92.1984 min | Flight: 7.3299 km (round trip) | Walk: (10.1500, 6.1800) -> (10.1900, 6.3400) = 0.1649 km x 2.0000 = 0.3298
+  Order 15: Drone 0 -> Locker 3 | Departure: 37.6039 min | Arrival: 46.4724 min | Flight: 14.7809 km (round trip) | Walk: (15.9100, 9.7500) -> (17.3900, 9.9200) = 1.4897 km x 2.0000 = 2.9795
+
+======================================================================

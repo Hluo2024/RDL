@@ -1,0 +1,146 @@
+{
+  "name": "RDL-n5-05",
+  "city": "Shenzhen",
+  "case_type": "single_hub_case_study",
+  "business_district": "Shenzhen single commercial district (normalized)",
+  "n_orders": 5,
+  "n_riders": 2,
+  "n_drones": 3,
+  "n_lockers": 4,
+  "locker_radius": 2.0,
+  "depot": [
+    10.0,
+    10.0
+  ],
+  "pickup_coords": [
+    [
+      10.83,
+      9.69
+    ],
+    [
+      12.67,
+      11.68
+    ],
+    [
+      9.42,
+      10.08
+    ],
+    [
+      10.52,
+      9.4
+    ],
+    [
+      8.54,
+      9.27
+    ]
+  ],
+  "delivery_coords": [
+    [
+      10.33,
+      1.87
+    ],
+    [
+      14.69,
+      10.48
+    ],
+    [
+      0.79,
+      10.38
+    ],
+    [
+      10.38,
+      11.14
+    ],
+    [
+      9.94,
+      1.53
+    ]
+  ],
+  "locker_coords": [
+    [
+      10.23,
+      2.07
+    ],
+    [
+      14.39,
+      10.18
+    ],
+    [
+      1.44,
+      10.27
+    ],
+    [
+      10.02,
+      11.32
+    ]
+  ],
+  "locker_capacity": [
+    5,
+    5,
+    5,
+    5
+  ],
+  "eligible_lockers": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      0
+    ]
+  ],
+  "demand": [
+    6.8,
+    10.4,
+    3.0,
+    7.7,
+    4.5
+  ],
+  "deadline": [
+    84.7,
+    62.3,
+    115.4,
+    66.6,
+    73.7
+  ],
+  "ready_time": [
+    21.0,
+    16.9,
+    49.8,
+    19.8,
+    7.4
+  ],
+  "service_pickup": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0
+  ],
+  "service_delivery": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0
+  ],
+  "rider_capacity": 25.0,
+  "drone_capacity": 5.0,
+  "drone_range": 20.0,
+  "rider_speed": 25.0,
+  "drone_speed": 50.0,
+  "cost_per_km_rider": 4.0,
+  "cost_per_km_drone": 1.0,
+  "cost_per_min_delay": 10.0,
+  "cost_per_km_walk": 2.0,
+  "service_time_hub": 2.0,
+  "M": 1000000.0
+}

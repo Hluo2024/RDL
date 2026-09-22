@@ -1,0 +1,61 @@
+======================================================================
+Rider-Drone-Locker Pickup-and-Delivery Routing - Detailed Result
+======================================================================
+
+Instance: RDL-n10-01
+Method: ALNS
+Orders: 10 | Riders: 2 | Drones: 3 | Lockers: 4
+
+--- Solver Statistics ---
+  n_iterations: 5000
+  solve_time: 1.7885
+  best_objective: 351.2733
+  final_objective: 351.2733
+  rider_cost: 269.1747
+  drone_cost: 0.0000
+  delay_cost: 82.0986
+  walk_cost: 0.0000
+  total_delay: 8.2099
+  is_feasible: True
+  n_direct: 10
+  n_drone: 0
+  n_restarts: 9
+  best_iteration: 276
+
+--- Objective ---
+  Total Cost:            351.2733
+  Rider Cost:            269.1747
+  Drone Cost:              0.0000
+  Delay Cost:             82.0986
+  Self-Pickup Cost:        0.0000
+  Total Delay (min):       8.2099
+
+  Feasible: True
+
+--- Order Service Modes ---
+  Direct: 10 | Drone: 0
+
+  Order Details:
+  Order  Mode     Ready    Deadline   Demand     Arrival(min) Delay(min)   Locker/Drone
+  -------------------------------------------------------------------------
+  0      Direct   29.9000  87.8000    11.2000    88.0772      0.2772       -
+  1      Direct   45.7000  105.6000   3.7000     95.0835      0.0000       -
+  2      Direct   7.9000   70.7000    5.9000     51.5761      0.0000       -
+  3      Direct   31.3000  77.7000    8.9000     43.1506      0.0000       -
+  4      Direct   31.6000  93.6000    7.6000     93.6228      0.0228       -
+  5      Direct   10.8000  82.7000    11.7000    90.6099      7.9099       -
+  6      Direct   16.7000  81.4000    8.4000     47.8183      0.0000       -
+  7      Direct   46.3000  86.7000    8.1000     57.1805      0.0000       -
+  8      Direct   29.3000  98.6000    4.0000     97.8112      0.0000       -
+  9      Direct   49.5000  106.4000   3.9000     100.2579     0.0000       -
+
+--- Rider Routes ---
+  Rider 0: O(start) -> P6 -> P2 -> P8 -> D6 -> D2 -> P4 -> P0 -> D0 -> D4 -> D8 -> O1(end)
+    Distance: 32.9266 km | Nodes: 12
+    Service Start Times (min): O=0.0000, P6=16.7000, P2=24.7142, P8=29.6923, D6=47.8183, D2=51.5761, P4=57.5133, P0=76.3271, D0=88.0772, D4=93.6228, D8=97.8112, O1=115.9134
+
+  Rider 1: O(start) -> P5 -> P3 -> D3 -> P7 -> P1 -> D7 -> P9 -> D5 -> D1 -> D9 -> O1(end)
+    Distance: 34.3671 km | Nodes: 12
+    Service Start Times (min): O=0.0000, P5=10.8000, P3=31.3000, D3=43.1506, P7=47.4408, P1=51.2571, D7=57.1805, P9=65.8958, D5=90.6099, D1=95.0835, D9=100.2579, O1=120.9225
+
+======================================================================

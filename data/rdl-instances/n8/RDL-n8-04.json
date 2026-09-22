@@ -1,0 +1,195 @@
+{
+  "name": "RDL-n8-04",
+  "city": "Shenzhen",
+  "case_type": "single_hub_case_study",
+  "generation_seed": 20261424,
+  "business_district": "Shenzhen single commercial district (normalized)",
+  "n_orders": 8,
+  "n_riders": 2,
+  "n_drones": 3,
+  "n_lockers": 4,
+  "locker_radius": 2.0,
+  "depot": [
+    10.0,
+    10.0
+  ],
+  "pickup_coords": [
+    [
+      11.26,
+      9.71
+    ],
+    [
+      8.54,
+      9.92
+    ],
+    [
+      9.68,
+      10.33
+    ],
+    [
+      11.83,
+      9.73
+    ],
+    [
+      8.11,
+      9.34
+    ],
+    [
+      9.24,
+      7.98
+    ],
+    [
+      11.64,
+      9.65
+    ],
+    [
+      8.8,
+      9.9
+    ]
+  ],
+  "delivery_coords": [
+    [
+      12.58,
+      9.97
+    ],
+    [
+      4.06,
+      10.41
+    ],
+    [
+      9.88,
+      3.59
+    ],
+    [
+      10.17,
+      13.99
+    ],
+    [
+      12.65,
+      10.0
+    ],
+    [
+      3.58,
+      10.4
+    ],
+    [
+      10.53,
+      3.75
+    ],
+    [
+      10.02,
+      13.06
+    ]
+  ],
+  "locker_coords": [
+    [
+      12.84,
+      10.1
+    ],
+    [
+      3.57,
+      10.51
+    ],
+    [
+      10.49,
+      3.88
+    ],
+    [
+      9.72,
+      13.62
+    ]
+  ],
+  "locker_capacity": [
+    5,
+    5,
+    5,
+    5
+  ],
+  "eligible_lockers": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "demand": [
+    2.8,
+    9.4,
+    8.1,
+    9.4,
+    4.1,
+    6.6,
+    4.4,
+    8.6
+  ],
+  "deadline": [
+    73.5,
+    95.0,
+    73.7,
+    97.3,
+    57.0,
+    98.9,
+    88.9,
+    78.1
+  ],
+  "ready_time": [
+    25.8,
+    42.7,
+    12.0,
+    38.8,
+    6.0,
+    31.0,
+    38.1,
+    15.3
+  ],
+  "service_pickup": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0
+  ],
+  "service_delivery": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0
+  ],
+  "rider_capacity": 25.0,
+  "drone_capacity": 5.0,
+  "drone_range": 20.0,
+  "rider_speed": 25.0,
+  "drone_speed": 50.0,
+  "cost_per_km_rider": 4.0,
+  "cost_per_km_drone": 1.0,
+  "cost_per_min_delay": 10.0,
+  "cost_per_km_walk": 2.0,
+  "service_time_hub": 2.0,
+  "M": 1000000.0
+}

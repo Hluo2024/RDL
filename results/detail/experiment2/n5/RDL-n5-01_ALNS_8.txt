@@ -1,0 +1,56 @@
+======================================================================
+Rider-Drone-Locker Pickup-and-Delivery Routing - Detailed Result
+======================================================================
+
+Instance: RDL-n5-01
+Method: ALNS
+Orders: 5 | Riders: 2 | Drones: 3 | Lockers: 4
+
+--- Solver Statistics ---
+  n_iterations: 5000
+  solve_time: 1.3052
+  best_objective: 104.1419
+  final_objective: 104.1419
+  rider_cost: 86.9576
+  drone_cost: 16.5239
+  delay_cost: 0.0000
+  walk_cost: 0.6603
+  total_delay: 0.0000
+  is_feasible: True
+  n_direct: 4
+  n_drone: 1
+  n_restarts: 9
+  best_iteration: 28
+
+--- Objective ---
+  Total Cost:            104.1419
+  Rider Cost:             86.9576
+  Drone Cost:             16.5239
+  Delay Cost:              0.0000
+  Self-Pickup Cost:        0.6603
+  Total Delay (min):       0.0000
+
+  Feasible: True
+
+--- Order Service Modes ---
+  Direct: 4 | Drone: 1
+
+  Order Details:
+  Order  Mode     Ready    Deadline   Demand     Arrival(min) Delay(min)   Locker/Drone
+  -------------------------------------------------------------------------
+  0      Direct   28.4000  78.8000    1.3000     64.9697      0.0000       -
+  1      Drone    10.2000  69.7000    1.1000     54.8243      0.0000       L1/D0
+  2      Direct   20.1000  62.4000    9.9000     24.6688      0.0000       -
+  3      Direct   37.4000  95.9000    10.1000    82.5637      0.0000       -
+  4      Direct   38.8000  83.0000    1.2000     53.2338      0.0000       -
+
+--- Rider Routes ---
+  Rider 0: (idle)
+  Rider 1: O(start) -> P1 -> P2 -> D2 -> P3 -> H1 -> P4 -> D4 -> P0 -> D0 -> D3 -> O1(end)
+    Distance: 21.7394 km | Nodes: 12
+    Service Start Times (min): O=0.0000, P1=10.2000, P2=20.1000, D2=24.6688, P3=37.4000, H1=42.9099, P4=46.8004, D4=53.2338, P0=57.9856, D0=64.9697, D3=82.5637, O1=99.5075
+
+--- Drone Tasks ---
+  Order 1: Drone 0 -> Locker 1 | Departure: 44.9099 min | Arrival: 54.8243 min | Flight: 16.5239 km (round trip) | Walk: (18.5900, 9.8100) -> (18.2600, 9.8200) = 0.3302 km x 2.0000 = 0.6603
+
+======================================================================

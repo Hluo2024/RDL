@@ -1,0 +1,935 @@
+{
+  "name": "SZTP-n25-01",
+  "city": "Shenzhen",
+  "case_type": "geographically_grounded_semi_synthetic_case",
+  "generation_seed": 20260803,
+  "data_scope_statement": "Merchant, public-facility, and locker-site coordinates are public POI data or nearby customer-area proxies. The exact drone launch pad and cabinet coordinates are unavailable; reported-area proxies are used. Order weights, ready times, deadlines, and order-to-POI pairings are generated transparently and are not proprietary Meituan transactions.",
+  "coordinate_system": {
+    "solver_coordinates": "local equirectangular kilometres",
+    "geographic_coordinates": "WGS84 latitude/longitude from OpenStreetMap public POIs",
+    "origin_lat": 22.52,
+    "origin_lon": 113.9353
+  },
+  "public_sources": [
+    {
+      "title": "Meituan drone route serving Shenzhen Talent Park",
+      "url": "https://www.meituan.com/news/NN230904058001287",
+      "supports": "Coastal City launch area, Talent Park pickup cabinet, and approximately 1 km flight context"
+    },
+    {
+      "title": "Nanshan Houhai smart-city drone operation",
+      "url": "https://www.szns.gov.cn/bsfw/hlwzwfw/zwdt_140139/content/post_10830667.html",
+      "supports": "Houhai commercial-area launch setting and surrounding commercial landmarks"
+    },
+    {
+      "title": "Shenzhen park drone-delivery operations",
+      "url": "https://www.sz.gov.cn/szzt2010/gysz/gydt/content/mpost_11582926.html",
+      "supports": "Regular drone-delivery routes in Shenzhen public parks"
+    },
+    {
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/copyright",
+      "supports": "Merchant and public-facility POI coordinates; OpenStreetMap contributors, ODbL"
+    }
+  ],
+  "location_catalog": {
+    "hub": {
+      "id": "hub_coastal_city_launch_area",
+      "name": "Coastal City reported launch-area proxy",
+      "lat": 22.52,
+      "lon": 113.9353,
+      "role": "depot_and_drone_launch_proxy",
+      "coordinate_status": "reported-area proxy; not an exact launch-pad coordinate",
+      "source": "Meituan and Shenzhen Nanshan District public reports"
+    },
+    "merchants": [
+      {
+        "id": "m01",
+        "name": "KFC - Alibaba Center",
+        "lat": 22.5122569,
+        "lon": 113.9372903,
+        "osm_id": 13915708517
+      },
+      {
+        "id": "m02",
+        "name": "KFC - Excellence Houhai",
+        "lat": 22.521765,
+        "lon": 113.9383432,
+        "osm_id": 7341766685
+      },
+      {
+        "id": "m03",
+        "name": "McDonald's - Houhaihui",
+        "lat": 22.5186572,
+        "lon": 113.9359564,
+        "osm_id": 13915708531
+      },
+      {
+        "id": "m04",
+        "name": "McDonald's - Poly Culture Plaza",
+        "lat": 22.5202477,
+        "lon": 113.9338494,
+        "osm_id": 13234865742
+      },
+      {
+        "id": "m05",
+        "name": "Starbucks - Coastal City",
+        "lat": 22.5205574,
+        "lon": 113.9302388,
+        "osm_id": 13234865739
+      },
+      {
+        "id": "m06",
+        "name": "Starbucks - Shenzhen Bay MixC",
+        "lat": 22.5185865,
+        "lon": 113.9411348,
+        "osm_id": 13232532422
+      },
+      {
+        "id": "m07",
+        "name": "% Arabica - Shenzhen Bay MixC",
+        "lat": 22.518204,
+        "lon": 113.9410148,
+        "osm_id": 13232532429
+      },
+      {
+        "id": "m08",
+        "name": "Manner Coffee - Shenzhen Bay MixC",
+        "lat": 22.5189947,
+        "lon": 113.9409603,
+        "osm_id": 13232532430
+      },
+      {
+        "id": "m09",
+        "name": "gaga - Shenzhen Bay",
+        "lat": 22.518155,
+        "lon": 113.938321,
+        "osm_id": 13232532426
+      },
+      {
+        "id": "m10",
+        "name": "Costa Coffee - Alibaba Center",
+        "lat": 22.511923,
+        "lon": 113.9375372,
+        "osm_id": 13915708520
+      },
+      {
+        "id": "m11",
+        "name": "HEYTEA - Houhai",
+        "lat": 22.520269,
+        "lon": 113.9360722,
+        "osm_id": 13915708529
+      },
+      {
+        "id": "m12",
+        "name": "Nayuki Tea - Houhai",
+        "lat": 22.5188027,
+        "lon": 113.9357573,
+        "osm_id": 13915708530
+      }
+    ],
+    "demand_locations": [
+      {
+        "id": "c01",
+        "name": "China Resources Tower",
+        "lat": 22.5177852,
+        "lon": 113.9416109
+      },
+      {
+        "id": "c02",
+        "name": "Shenzhen Bay MixC",
+        "lat": 22.5179038,
+        "lon": 113.9389111
+      },
+      {
+        "id": "c03",
+        "name": "Excellence Houhai Center",
+        "lat": 22.5218764,
+        "lon": 113.9380999
+      },
+      {
+        "id": "c04",
+        "name": "Shenzhen Bay Sports Center customer-area proxy",
+        "lat": 22.52195,
+        "lon": 113.944
+      },
+      {
+        "id": "c05",
+        "name": "Shenzhen Bay No. 1",
+        "lat": 22.5101165,
+        "lon": 113.9378532
+      },
+      {
+        "id": "c06",
+        "name": "Alibaba Center customer-area proxy",
+        "lat": 22.5122569,
+        "lon": 113.9372903
+      },
+      {
+        "id": "c07",
+        "name": "Tencent Binhai Building",
+        "lat": 22.5258747,
+        "lon": 113.9304075
+      },
+      {
+        "id": "c08",
+        "name": "Coastal City",
+        "lat": 22.5202404,
+        "lon": 113.9302615
+      },
+      {
+        "id": "c09",
+        "name": "Talent Park customer-area proxy A",
+        "lat": 22.51402,
+        "lon": 113.9436
+      },
+      {
+        "id": "c10",
+        "name": "Talent Park customer-area proxy B",
+        "lat": 22.51305,
+        "lon": 113.9452
+      }
+    ],
+    "locker_sites": [
+      {
+        "id": "l01",
+        "name": "Talent Park drone pickup point proxy",
+        "lat": 22.5136618,
+        "lon": 113.9441738,
+        "site_status": "proxy for publicly reported operating pickup cabinet"
+      },
+      {
+        "id": "l02",
+        "name": "Shenzhen Bay Cultural Plaza candidate site",
+        "lat": 22.5153022,
+        "lon": 113.9404676,
+        "site_status": "candidate locker site; not claimed as operating"
+      },
+      {
+        "id": "l03",
+        "name": "Shenzhen Bay Sports Center candidate site",
+        "lat": 22.5213263,
+        "lon": 113.9447999,
+        "site_status": "candidate locker site; not claimed as operating"
+      },
+      {
+        "id": "l04",
+        "name": "Alibaba Center candidate site",
+        "lat": 22.5123547,
+        "lon": 113.9378516,
+        "site_status": "candidate locker site; not claimed as operating"
+      },
+      {
+        "id": "l05",
+        "name": "Tencent Binhai Building candidate site",
+        "lat": 22.5255,
+        "lon": 113.9307,
+        "site_status": "candidate locker site; not claimed as operating"
+      }
+    ]
+  },
+  "order_provenance": [
+    {
+      "order": 0,
+      "merchant_id": "m09",
+      "demand_location_id": "c07"
+    },
+    {
+      "order": 1,
+      "merchant_id": "m05",
+      "demand_location_id": "c06"
+    },
+    {
+      "order": 2,
+      "merchant_id": "m01",
+      "demand_location_id": "c03"
+    },
+    {
+      "order": 3,
+      "merchant_id": "m10",
+      "demand_location_id": "c04"
+    },
+    {
+      "order": 4,
+      "merchant_id": "m04",
+      "demand_location_id": "c10"
+    },
+    {
+      "order": 5,
+      "merchant_id": "m01",
+      "demand_location_id": "c10"
+    },
+    {
+      "order": 6,
+      "merchant_id": "m02",
+      "demand_location_id": "c05"
+    },
+    {
+      "order": 7,
+      "merchant_id": "m12",
+      "demand_location_id": "c02"
+    },
+    {
+      "order": 8,
+      "merchant_id": "m08",
+      "demand_location_id": "c02"
+    },
+    {
+      "order": 9,
+      "merchant_id": "m11",
+      "demand_location_id": "c07"
+    },
+    {
+      "order": 10,
+      "merchant_id": "m03",
+      "demand_location_id": "c08"
+    },
+    {
+      "order": 11,
+      "merchant_id": "m10",
+      "demand_location_id": "c07"
+    },
+    {
+      "order": 12,
+      "merchant_id": "m02",
+      "demand_location_id": "c01"
+    },
+    {
+      "order": 13,
+      "merchant_id": "m03",
+      "demand_location_id": "c01"
+    },
+    {
+      "order": 14,
+      "merchant_id": "m08",
+      "demand_location_id": "c05"
+    },
+    {
+      "order": 15,
+      "merchant_id": "m06",
+      "demand_location_id": "c09"
+    },
+    {
+      "order": 16,
+      "merchant_id": "m09",
+      "demand_location_id": "c07"
+    },
+    {
+      "order": 17,
+      "merchant_id": "m07",
+      "demand_location_id": "c06"
+    },
+    {
+      "order": 18,
+      "merchant_id": "m07",
+      "demand_location_id": "c02"
+    },
+    {
+      "order": 19,
+      "merchant_id": "m04",
+      "demand_location_id": "c06"
+    },
+    {
+      "order": 20,
+      "merchant_id": "m11",
+      "demand_location_id": "c04"
+    },
+    {
+      "order": 21,
+      "merchant_id": "m06",
+      "demand_location_id": "c03"
+    },
+    {
+      "order": 22,
+      "merchant_id": "m01",
+      "demand_location_id": "c10"
+    },
+    {
+      "order": 23,
+      "merchant_id": "m05",
+      "demand_location_id": "c04"
+    },
+    {
+      "order": 24,
+      "merchant_id": "m12",
+      "demand_location_id": "c10"
+    }
+  ],
+  "generation_rules": {
+    "orders": 25,
+    "merchant_assignment": "balanced repetition over 12 public merchant POIs, then shuffled",
+    "demand_location_assignment": "five orders per locker-centred customer cluster; each order is assigned at random to one of two nearby demand locations, then shuffled",
+    "payload_kg": "13 draws from U(1.0,4.8) and 12 draws from U(5.2,12.0), then shuffled",
+    "ready_time_min": "U(0,50)",
+    "deadline_min": "ready time + direct merchant-to-customer travel at 25 km/h + U(35,55)",
+    "random_seed": 20260803
+  },
+  "parameter_basis": {
+    "drone_capacity_kg": "5 kg representative delivery-drone specification shared with the benchmark",
+    "drone_round_trip_range_km": "20 km representative delivery-drone specification shared with the benchmark",
+    "drone_speed_kmh": "50 km/h representative operating-speed assumption shared with the benchmark",
+    "rider_speed_kmh": "25 km/h operating-speed assumption shared with the benchmark",
+    "non_spatial_parameters": "fleet sizes, service radius, capacities, range, speeds, costs, and service times are shared with the n=25 benchmark"
+  },
+  "n_orders": 25,
+  "n_riders": 5,
+  "n_drones": 8,
+  "n_lockers": 5,
+  "locker_radius": 2.0,
+  "depot": [
+    0.0,
+    0.0
+  ],
+  "pickup_coords": [
+    [
+      0.310654,
+      -0.204009
+    ],
+    [
+      -0.52045,
+      0.061634
+    ],
+    [
+      0.204665,
+      -0.856186
+    ],
+    [
+      0.230054,
+      -0.893106
+    ],
+    [
+      -0.149167,
+      0.027389
+    ],
+    [
+      0.204665,
+      -0.856186
+    ],
+    [
+      0.312936,
+      0.195163
+    ],
+    [
+      0.047025,
+      -0.13239
+    ],
+    [
+      0.582057,
+      -0.11116
+    ],
+    [
+      0.079406,
+      0.029744
+    ],
+    [
+      0.067499,
+      -0.148479
+    ],
+    [
+      0.230054,
+      -0.893106
+    ],
+    [
+      0.312936,
+      0.195163
+    ],
+    [
+      0.067499,
+      -0.148479
+    ],
+    [
+      0.582057,
+      -0.11116
+    ],
+    [
+      0.600001,
+      -0.156296
+    ],
+    [
+      0.310654,
+      -0.204009
+    ],
+    [
+      0.587661,
+      -0.198591
+    ],
+    [
+      0.587661,
+      -0.198591
+    ],
+    [
+      -0.149167,
+      0.027389
+    ],
+    [
+      0.079406,
+      0.029744
+    ],
+    [
+      0.600001,
+      -0.156296
+    ],
+    [
+      0.204665,
+      -0.856186
+    ],
+    [
+      -0.52045,
+      0.061634
+    ],
+    [
+      0.047025,
+      -0.13239
+    ]
+  ],
+  "delivery_coords": [
+    [
+      -0.503103,
+      0.649589
+    ],
+    [
+      0.204665,
+      -0.856186
+    ],
+    [
+      0.287918,
+      0.207481
+    ],
+    [
+      0.894633,
+      0.215619
+    ],
+    [
+      1.018031,
+      -0.768489
+    ],
+    [
+      1.018031,
+      -0.768489
+    ],
+    [
+      0.262549,
+      -1.092858
+    ],
+    [
+      0.371334,
+      -0.231785
+    ],
+    [
+      0.371334,
+      -0.231785
+    ],
+    [
+      -0.503103,
+      0.649589
+    ],
+    [
+      -0.518116,
+      0.026582
+    ],
+    [
+      -0.503103,
+      0.649589
+    ],
+    [
+      0.648959,
+      -0.244899
+    ],
+    [
+      0.648959,
+      -0.244899
+    ],
+    [
+      0.262549,
+      -1.092858
+    ],
+    [
+      0.853501,
+      -0.661233
+    ],
+    [
+      -0.503103,
+      0.649589
+    ],
+    [
+      0.204665,
+      -0.856186
+    ],
+    [
+      0.371334,
+      -0.231785
+    ],
+    [
+      0.204665,
+      -0.856186
+    ],
+    [
+      0.894633,
+      0.215619
+    ],
+    [
+      0.287918,
+      0.207481
+    ],
+    [
+      1.018031,
+      -0.768489
+    ],
+    [
+      0.894633,
+      0.215619
+    ],
+    [
+      1.018031,
+      -0.768489
+    ]
+  ],
+  "locker_coords": [
+    [
+      0.912505,
+      -0.70084
+    ],
+    [
+      0.531392,
+      -0.519455
+    ],
+    [
+      0.976888,
+      0.146654
+    ],
+    [
+      0.262385,
+      -0.845371
+    ],
+    [
+      -0.473024,
+      0.608157
+    ]
+  ],
+  "locker_capacity": [
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "eligible_lockers": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ]
+  ],
+  "demand": [
+    3.4,
+    1.0,
+    6.9,
+    1.8,
+    6.7,
+    9.9,
+    11.1,
+    2.4,
+    11.7,
+    9.9,
+    8.5,
+    2.7,
+    4.5,
+    10.0,
+    2.4,
+    11.1,
+    11.1,
+    4.6,
+    1.8,
+    2.6,
+    2.0,
+    2.0,
+    4.7,
+    10.0,
+    5.4
+  ],
+  "deadline": [
+    59.5,
+    99.7,
+    62.4,
+    58.1,
+    60.1,
+    63.3,
+    86.8,
+    62.8,
+    55.7,
+    78.6,
+    93.9,
+    89.4,
+    76.9,
+    68.4,
+    65.5,
+    58.0,
+    56.8,
+    78.5,
+    51.1,
+    79.2,
+    73.4,
+    82.8,
+    82.0,
+    86.3,
+    78.4
+  ],
+  "ready_time": [
+    12.9,
+    47.7,
+    10.7,
+    14.7,
+    19.9,
+    14.3,
+    41.9,
+    11.6,
+    8.8,
+    22.2,
+    40.2,
+    47.8,
+    34.9,
+    31.7,
+    9.3,
+    4.8,
+    10.7,
+    30.3,
+    11.3,
+    24.8,
+    30.5,
+    27.1,
+    28.3,
+    40.0,
+    30.0
+  ],
+  "service_pickup": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0
+  ],
+  "service_delivery": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0
+  ],
+  "rider_capacity": 25.0,
+  "drone_capacity": 5.0,
+  "drone_range": 20.0,
+  "rider_speed": 25.0,
+  "drone_speed": 50.0,
+  "cost_per_km_rider": 4.0,
+  "cost_per_km_drone": 1.0,
+  "cost_per_min_delay": 10.0,
+  "cost_per_km_walk": 2.0,
+  "service_time_hub": 2.0,
+  "M": 1000000.0
+}

@@ -1,0 +1,7 @@
+Independent Parameter Tuning Results
+xi_min = 0.1
+xi_max = 0.4
+eta = 0.997
+psi = 100
+MeanRPD = 0.3276
+MeanRank = 3.2500
